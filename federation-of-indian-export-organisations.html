@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Federation of Indian Export Organisations | Udyog Suvidha Kendra</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  
+  <!-- GSAP & Lenis for Smooth Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    
+    html.lenis { height: auto; }
+    .lenis.lenis-smooth { scroll-behavior: auto !important; }
+    
+    .hero-bg {
+      background-image: url('overview_hero_bg.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+    }
+    .hero-overlay.sky {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(8, 47, 73, 0.95), rgba(14, 165, 233, 0.7));
+      z-index: 1;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- =========================================================
+     PREMIUM TWO-TIER NAVBAR
+     ========================================================= -->
+<!-- =========================================================
+     PREMIUM TWO-TIER NAVBAR
+     ========================================================= -->
+<!-- =========================================================
+     PREMIUM TWO-TIER NAVBAR
+     ========================================================= -->
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-white/80 backdrop-blur-xl border-b border-white/20 shadow-sm" id="premium-navbar">
+  <!-- Top Row: Logo & Contact Info -->
+  <div class="w-full py-3 top-row transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+      <!-- HTML Logo Replacement -->
+      <a href="index.html" class="flex flex-col">
+        <div class="text-[28px] font-black text-[#1a237e] tracking-tight leading-none">UDYOG</div>
+        <div class="flex items-center gap-1 mt-1">
+          <span class="text-[10px] font-bold text-[#1a237e] tracking-wider leading-none">SUVIDHA KENDRA</span>
+          <div class="grid grid-cols-2 gap-[1px]">
+            <div class="w-1 h-1 bg-[#84cc16]"></div>
+            <div class="w-1 h-1 bg-[#84cc16]"></div>
+            <div class="w-1 h-1 bg-[#84cc16]"></div>
+            <div class="w-1 h-1 bg-[#84cc16]"></div>
+          </div>
+        </div>
+      </a>
+      
+      <!-- Top Row Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" class="text-sm font-semibold text-gray-700 hover:text-[#1a237e] transition-colors">Home</a>
+        <a href="overview.html" class="text-sm font-semibold text-gray-700 hover:text-[#1a237e] transition-colors">Overview</a>
+        <!-- Funding -->
+          <div class="nav-item relative group h-full flex items-center cursor-pointer text-[#374151] hover:text-[#1a237e] transition-colors">
+            <span class="py-4 font-semibold">Funding <i class="fas fa-chevron-down text-[10px] ml-1.5 opacity-60 transition-transform group-hover:rotate-180"></i></span>
+            <div class="mega-menu absolute top-full left-1/2 -translate-x-1/2 hidden group-hover:block bg-white/95 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-6 min-w-[500px] ring-1 ring-black/5 transform opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-200 origin-top">
+              <div class="grid grid-cols-2 gap-8">
+                
+                <!-- Column 1 -->
+                <div>
+                  <h4 class="text-xs font-bold text-navy-800 uppercase tracking-wider border-b-2 border-blue-100 pb-2 mb-4">Startup Funding</h4>
+                  <div class="flex flex-col gap-3">
+                    <a href="seed-funding.html" class="text-sm font-medium text-gray-700 hover:text-[#064e3b] hover:bg-green-50 px-3 py-1.5 rounded-md transition-colors">Seed Funding</a>
+                    <a href="angel-investment.html" class="text-sm font-medium text-gray-700 hover:text-[#064e3b] hover:bg-green-50 px-3 py-1.5 rounded-md transition-colors">Angel Investment</a>
+                    <a href="venture-capital.html" class="text-sm font-medium text-gray-700 hover:text-[#064e3b] hover:bg-green-50 px-3 py-1.5 rounded-md transition-colors">Venture Capital</a>
+                  </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                  <h4 class="text-xs font-bold text-navy-800 uppercase tracking-wider border-b-2 border-blue-100 pb-2 mb-4">Govt Schemes</h4>
+                  <div class="flex flex-col gap-3">
+                    <a href="mudra-loan.html" class="text-sm font-medium text-gray-700 hover:text-[#064e3b] hover:bg-green-50 px-3 py-1.5 rounded-md transition-colors">Mudra Loan</a>
+                    <a href="cgtmse-scheme.html" class="text-sm font-medium text-gray-700 hover:text-[#064e3b] hover:bg-green-50 px-3 py-1.5 rounded-md transition-colors">CGTMSE Scheme</a>
+                    <a href="startup-india-seed-fund.html" class="text-sm font-medium text-gray-700 hover:text-[#064e3b] hover:bg-green-50 px-3 py-1.5 rounded-md transition-colors">Startup India Seed Fund</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div><a href="benefits.html" class="text-sm font-semibold text-gray-700 hover:text-[#1a237e] transition-colors">Benefits</a>
+        <a href="process.html" class="text-sm font-semibold text-gray-700 hover:text-[#1a237e] transition-colors">Process</a>
+        <a href="documents.html" class="text-sm font-semibold text-gray-700 hover:text-[#1a237e] transition-colors">Documents</a>
+        <a href="faq.html" class="text-sm font-semibold text-gray-700 hover:text-[#1a237e] transition-colors">FAQs</a>
+      </nav>
+      
+      <!-- Apply Now Button -->
+      <div class="hidden lg:block">
+        <a href="apply.html" class="bg-[#1a237e] text-white font-bold py-2.5 px-6 rounded-lg shadow-md hover:shadow-lg hover:bg-[#283593] transition-all duration-300">
+          Apply Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Row: Mega Menu -->
+  <div class="nav-bottom-row w-full transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-14">
+        
+        <!-- Desktop Mega Nav Links -->
+        <div class="hidden lg:flex items-center gap-4 w-full justify-between pr-4 desktop-nav text-sm font-semibold text-gray-700">
+          
+          <!-- Business -->
+          <div class="nav-item relative group h-full flex items-center cursor-pointer text-[#374151] hover:text-[#1a237e] transition-colors">
+            <span class="py-4 font-semibold">Business <i class="fas fa-chevron-down text-[10px] ml-1.5 opacity-60 transition-transform group-hover:rotate-180"></i></span>
+            <div class="mega-menu absolute top-full left-0 hidden group-hover:block bg-white/95 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-6 min-w-[700px] ring-1 ring-black/5 transform opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-200 origin-top-left">
+              <div class="grid grid-cols-3 gap-6">
+                <div class="flex flex-col gap-4">
+                  <a href="partnership-registration.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">Partnership</a>
+                  <a href="business-registration.html#nidhi" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">Nidhi Company</a>
+                  <a href="business-registration.html#proprietorship" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">Proprietorship</a>
+                  <a href="business-registration.html#producer" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">Producer Company</a>
+                  <a href="business-registration.html#mca" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">MCA Name Approval</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                  <a href="business-registration.html#section8" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">Section 8 Company</a>
+                  <a href="business-registration.html#opc" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">One Person Company</a>
+                  <a href="business-registration.html#trust" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">Trust Registration</a>
+                  <a href="business-registration.html#pvt-ltd" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">Private Limited Company</a>
+                  <a href="business-registration.html#prop-to-llp" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">Proprietor to LLP</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                  <a href="business-registration.html#part-to-llp" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">Partnership to LLP</a>
+                  <a href="business-registration.html#prop-to-pvt" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">Proprietor to Pvt Ltd</a>
+                  <a href="business-registration.html#part-to-pvt" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">Partnership to Pvt Ltd</a>
+                  <a href="business-registration.html#prop-to-opc" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">Proprietor to OPC</a>
+                  <a href="business-registration.html#llp" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] transition-colors">Limited Liability Partnership</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Certificate -->
+          <div class="nav-item relative group h-full flex items-center cursor-pointer text-[#374151] hover:text-[#1a237e] transition-colors">
+            <span class="py-4 font-semibold">Certificate <i class="fas fa-chevron-down text-[10px] ml-1.5 opacity-60 transition-transform group-hover:rotate-180"></i></span>
+            <div class="mega-menu absolute top-full left-0 hidden group-hover:block bg-white/95 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-6 min-w-[700px] ring-1 ring-black/5 transform opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-200 origin-top-left">
+              <div class="grid grid-cols-3 gap-6">
+                <div>
+                  <h4 class="text-xs font-bold text-navy-800 uppercase tracking-wider border-b-2 border-blue-100 pb-2 mb-3">Food & Safety</h4>
+                  <div class="flex flex-col gap-2">
+                    <a href="licenses.html#fssai" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">FSSAI Basic License</a>
+                    <a href="licenses.html#fssai" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">FSSAI State License</a>
+                    <a href="licenses.html#fssai" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">FSSAI Central License</a>
+                    <a href="licenses.html#drug" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">Drug License Retail</a>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-navy-800 uppercase tracking-wider border-b-2 border-blue-100 pb-2 mb-3">MSME & ISO</h4>
+                  <div class="flex flex-col gap-2">
+                    <a href="licenses.html#msme" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">Udyam Registration</a>
+                    <a href="licenses.html#msme" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">MSME Certificate</a>
+                    <a href="licenses.html#iso" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">ISO 9001:2015</a>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-navy-800 uppercase tracking-wider border-b-2 border-blue-100 pb-2 mb-3">Other Licenses</h4>
+                  <div class="flex flex-col gap-2">
+                    <a href="licenses.html#shop-act" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">Shop & Establishment</a>
+                    <a href="licenses.html#fire-noc" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">Fire NOC</a>
+                    <a href="licenses.html#rera" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">RERA Registration</a>
+                    <a href="licenses.html#halal" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">Halal Certificate</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Compliance -->
+          <div class="nav-item relative group h-full flex items-center cursor-pointer text-[#374151] hover:text-[#1a237e] transition-colors">
+            <span class="py-4 font-semibold">Compliance <i class="fas fa-chevron-down text-[10px] ml-1.5 opacity-60 transition-transform group-hover:rotate-180"></i></span>
+                        <div class="mega-menu absolute top-full left-0 hidden group-hover:block bg-white/95 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-6 min-w-[700px] ring-1 ring-black/5 transform opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-200 origin-top-left">
+              <div class="grid grid-cols-3 gap-6">
+                <div class="flex flex-col gap-2">
+                  <a href="adt-1-filing.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">ADT-1 Filing</a>
+                  <a href="dpt-3-filing.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">DPT-3 Filing</a>
+                  <a href="business-plan.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Business Plan</a>
+                  <a href="aoa-amendment.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">AOA Amendment</a>
+                  <a href="moa-amendment.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">MOA Amendment</a>
+                  <a href="share-transfer.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Share Transfer</a>
+                  <a href="demat-of-shares.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Demat of Shares</a>
+                  <a href="remove-director.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Remove Director</a>
+                  <a href="director-change.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Director Change</a>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <a href="llp-compliance.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">LLP Compliance</a>
+                  <a href="opc-compliance.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">OPC Compliance</a>
+                  <a href="winding-up-llp.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Winding Up - LLP</a>
+                  <a href="din-ekyc-filing.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">DIN eKYC Filing</a>
+                  <a href="din-reactivation.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">DIN Reactivation</a>
+                  <a href="pf-return-filing.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">PF Return Filing</a>
+                  <a href="pt-return-filing.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">PT Return Filing</a>
+                  <a href="winding-up-company.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Winding Up-Company</a>
+                  <a href="company-compliance.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Company Compliance</a>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <a href="esi-return-filing.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">ESI Return Filing</a>
+                  <a href="fla-return-filing.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">FLA Return Filing</a>
+                  <a href="llp-form-11-filing.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">LLP Form 11 Filing</a>
+                  <a href="dormant-status-filing.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Dormant Status Filing</a>
+                  <a href="name-change-company.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Name Change - Company</a>
+                  <a href="partnership-compliance.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Partnership Compliance</a>
+                  <a href="registered-office-change.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Registered Office Change</a>
+                  <a href="proprietorship-compliance.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Proprietorship Compliance</a>
+                  <a href="authorized-capital-increase.html" class="text-[13px] font-medium text-gray-700 hover:text-teal-700 hover:bg-teal-50 px-2 py-1.5 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Authorized Capital Increase</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Taxation -->
+          <div class="nav-item relative group h-full flex items-center cursor-pointer text-[#374151] hover:text-[#1a237e] transition-colors">
+            <a href="taxation.html" class="py-4 font-semibold">Taxation <i class="fas fa-chevron-down text-[10px] ml-1.5 opacity-60 transition-transform group-hover:rotate-180"></i></a>
+                        <div class="mega-menu absolute top-full left-1/2 -translate-x-1/2 hidden group-hover:block bg-white/95 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-8 min-w-[600px] ring-1 ring-black/5 transform opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-200 origin-top">
+              <div class="grid grid-cols-2 gap-8">
+                <div class="flex flex-col gap-3">
+                  <a href="composition-return.html" class="text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors whitespace-nowrap overflow-hidden text-ellipsis">Composition Return</a>
+                  <a href="gst-cancellation.html" class="text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors whitespace-nowrap overflow-hidden text-ellipsis">GST Cancellation</a>
+                  <a href="gst-return-filing.html" class="text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors whitespace-nowrap overflow-hidden text-ellipsis">GST Return Filing</a>
+                  <a href="gst-nil-return.html" class="text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors whitespace-nowrap overflow-hidden text-ellipsis">GST Nil Return</a>
+                  <a href="itr-1-only-salary.html" class="text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors whitespace-nowrap overflow-hidden text-ellipsis">ITR-1 (Only Salary)</a>
+                  <a href="itr-2-salary-and-other.html" class="text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors whitespace-nowrap overflow-hidden text-ellipsis">ITR-2 (Salary & Other)</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <a href="itr-3-return-filing.html" class="text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors whitespace-nowrap overflow-hidden text-ellipsis">ITR-3 Return Filing</a>
+                  <a href="itr-4-return-filing.html" class="text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors whitespace-nowrap overflow-hidden text-ellipsis">ITR-4 Return Filing</a>
+                  <a href="itr-5-return-filing.html" class="text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors whitespace-nowrap overflow-hidden text-ellipsis">ITR-5 Return Filing</a>
+                  <a href="itr-6-return-filing.html" class="text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors whitespace-nowrap overflow-hidden text-ellipsis">ITR-6 Return Filing</a>
+                  <a href="itr-7-return-filing.html" class="text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors whitespace-nowrap overflow-hidden text-ellipsis">ITR-7 Return Filing</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exports -->
+          <div class="nav-item relative group h-full flex items-center cursor-pointer text-[#374151] hover:text-[#1a237e] transition-colors">
+            <span class="py-4 font-semibold">Exports <i class="fas fa-chevron-down text-[10px] ml-1.5 opacity-60 transition-transform group-hover:rotate-180"></i></span>
+                        <div class="mega-menu absolute top-full left-1/2 -translate-x-1/2 hidden group-hover:block bg-white/95 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-6 min-w-[1000px] ring-1 ring-black/5 transform opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-200 origin-top">
+              <div class="grid grid-cols-4 gap-6">
+                <div class="flex flex-col gap-1.5">
+                  <a href="council-for-leather-exports.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Council for Leather Exports">Council for Leather Exports</a>
+                  <a href="handloom-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Handloom Export Promotion Council">Handloom Export Promotion Co..</a>
+                  <a href="ayush-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Ayush Export Promotion Council">Ayush Export Promotion Council</a>
+                  <a href="plastics-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Plastics Export Promotion Council">Plastics Export Promotion Co..</a>
+                  <a href="services-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Services Export Promotion Council">Services Export Promotion Co..</a>
+                  <a href="cotton-textiles-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Cotton Textiles Export Promotion Council">Cotton Textiles Export Promo..</a>
+                  <a href="wool-industry-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Wool Industry Export Promotion Council">Wool Industry Export Promoti..</a>
+                  <a href="electronics-computer-software-epc.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Electronics & Computer Software EPC">Electronics & Computer Softw..</a>
+                  <a href="gem-jewellery-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Gem & Jewellery Export Promotion Council">Gem & Jewellery Export Promo..</a>
+                  <a href="cashew-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Cashew Export Promotion Council">Cashew Export Promotion Coun..</a>
+                  <a href="wool-woollens-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Wool & Woollens Export Promotion Council">Wool & Woollens Export Promo..</a>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <a href="sports-goods-toys-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Sports Goods & Toys Export Promotion Council">Sports Goods & Toys Export P..</a>
+                  <a href="export-promotion-council-for-handicrafts.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Export Promotion Council for Handicrafts">Export Promotion Council for..</a>
+                  <a href="export-promotion-council-for-eous-sezs.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Export Promotion Council for EOUs & SEZs">Export Promotion Council for..</a>
+                  <a href="management-technical-textiles.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Management & Technical Textiles">Management & Technical Texti..</a>
+                  <a href="rcmc-registration.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="RCMC Registration">RCMC Registration</a>
+                  <a href="apeda-registration.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="APEDA Registration">APEDA Registration</a>
+                  <a href="federation-of-indian-export-organisations.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Federation of Indian Export Organisations">Federation of Indian Export ..</a>
+                  <a href="the-indian-silk-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="The Indian Silk Export Promotion Council">The Indian Silk Export Promo..</a>
+                  <a href="indian-oil-seeds-produce-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Indian Oil Seeds & Produce Export Promotion Council">Indian Oil Seeds & Produce E..</a>
+                  <a href="shellac-forest-products-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Shellac & Forest Products Export Promotion Council">Shellac & Forest Products Ex..</a>
+                  <a href="powerloom-development-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Powerloom Development & Export Promotion Council">Powerloom Development & Expo..</a>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <a href="project-exports-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Project Exports Promotion Council">Project Exports Promotion Co..</a>
+                  <a href="pharmaceuticals-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Pharmaceuticals Export Promotion Council">Pharmaceuticals Export Promo..</a>
+                  <a href="export-promotion-council-for-special-economic-zones.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Export Promotion Council for Special Economic Zones">Export Promotion Council for..</a>
+                  <a href="marine-products-export-development-authority.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Marine Products Export Development Authority">Marine Products Export Devel..</a>
+                  <a href="directorate-of-handicrafts-j-k.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Directorate of Handicrafts, J&K">Directorate of Handicrafts, ..</a>
+                  <a href="eepc-india.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="EEPC INDIA">EEPC INDIA</a>
+                  <a href="telecom-equipment-and-services-epc.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Telecom Equipment and Services EPC">Telecom Equipment and Servic..</a>
+                  <a href="basic-chemicals-cosmetics-dyes-epc.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Basic Chemicals Cosmetics & Dyes EPC">Basic Chemicals Cosmetics & ..</a>
+                  <a href="jute-products-development-and-epc.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Jute Products Development and EPC">Jute Products Development an..</a>
+                  <a href="mobile-and-electronic-devices-epc.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Mobile and Electronic Devices EPC">Mobile and Electronic Device..</a>
+                  <a href="tea-board.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Tea Board">Tea Board</a>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <a href="coir-board.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Coir Board">Coir Board</a>
+                  <a href="coffee-board.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Coffee Board">Coffee Board</a>
+                  <a href="rubber-board.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Rubber Board">Rubber Board</a>
+                  <a href="spices-board.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Spices Board">Spices Board</a>
+                  <a href="tobacco-board.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Tobacco Board">Tobacco Board</a>
+                  <a href="capexil.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="CAPEXIL">CAPEXIL</a>
+                  <a href="testepc.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="TESTEPC">TESTEPC</a>
+                  <a href="coconut-development-board.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Coconut Development Board">Coconut Development Board</a>
+                  <a href="carpet-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Carpet Export Promotion Council">Carpet Export Promotion Coun..</a>
+                  <a href="apparel-export-promotion-council.html" class="text-[12px] font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors whitespace-nowrap overflow-hidden text-ellipsis" title="Apparel Export Promotion Council">Apparel Export Promotion Cou..</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Funding -->
+          <div class="nav-item relative group h-full flex items-center cursor-pointer text-[#374151] hover:text-[#1a237e] transition-colors">
+            <a href="funding.html" class="py-4 font-semibold">Funding <i class="fas fa-chevron-down text-[10px] ml-1.5 opacity-60 transition-transform group-hover:rotate-180"></i></a>
+            <div class="mega-menu absolute top-full left-0 hidden group-hover:block bg-white/95 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-6 min-w-[500px] ring-1 ring-black/5 transform opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-200 origin-top-left">
+              <div class="grid grid-cols-2 gap-6">
+                <div>
+                  <h4 class="text-xs font-bold text-navy-800 uppercase tracking-wider border-b-2 border-blue-100 pb-2 mb-3">Startup Funding</h4>
+                  <div class="flex flex-col gap-2">
+                    <a href="funding.html#seed" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">Seed Funding</a>
+                    <a href="funding.html#angel" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">Angel Investment</a>
+                    <a href="funding.html#vc" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">Venture Capital</a>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-navy-800 uppercase tracking-wider border-b-2 border-blue-100 pb-2 mb-3">Govt Schemes</h4>
+                  <div class="flex flex-col gap-2">
+                    <a href="funding.html#mudra" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">Mudra Loan</a>
+                    <a href="funding.html#cgtmse" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">CGTMSE Scheme</a>
+                    <a href="funding.html#startup-india" class="text-sm text-gray-600 hover:text-blue-600 hover:pl-1 transition-all">Startup India Seed Fund</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trademark & IP -->
+          <div class="nav-item relative group h-full flex items-center cursor-pointer text-[#374151] hover:text-[#1a237e] transition-colors">
+            <span class="py-4 font-semibold">Trademark <i class="fas fa-chevron-down text-[10px] ml-1.5 opacity-60 transition-transform group-hover:rotate-180"></i></span>
+            <div class="mega-menu absolute top-full left-1/2 -translate-x-1/2 hidden group-hover:block bg-white/95 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-8 min-w-[900px] ring-1 ring-black/5 transform opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-200 origin-top">
+              <div class="grid grid-cols-3 gap-10">
+                
+                <!-- Column 1 -->
+                <div>
+                  <h4 class="text-xs font-bold text-navy-800 uppercase tracking-wider border-b-2 border-blue-100 pb-2 mb-4">Registration & Objection</h4>
+                  <div class="flex flex-col gap-3">
+                    <a href="trademark-registration.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Trademark Registration</a>
+                    <a href="trademark-objection.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Trademark Objection</a>
+                    <a href="trademark-certificate.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Trademark Certificate</a>
+                    <a href="trademark-opposition.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Trademark Opposition</a>
+                    <a href="trademark-hearing.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Trademark Hearing</a>
+                  </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                  <h4 class="text-xs font-bold text-navy-800 uppercase tracking-wider border-b-2 border-blue-100 pb-2 mb-4">Maintenance & Actions</h4>
+                  <div class="flex flex-col gap-3">
+                    <a href="trademark-rectification.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Trademark Rectification</a>
+                    <a href="tm-infringement.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">TM Infringement Notice</a>
+                    <a href="trademark-renewal.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Trademark Renewal</a>
+                    <a href="trademark-transfer.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Trademark Transfer</a>
+                    <a href="expedited-trademark.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Expedited Trademark Registration</a>
+                  </div>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                  <h4 class="text-xs font-bold text-navy-800 uppercase tracking-wider border-b-2 border-blue-100 pb-2 mb-4">Design & Copyright</h4>
+                  <div class="flex flex-col gap-3">
+                    <a href="design-registration.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Design Registration</a>
+                    <a href="design-objection.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Design Objection</a>
+                    <a href="copyright-registration.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Copyright Registration</a>
+                    <a href="copyright-objection.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Copyright Objection</a>
+                    <a href="patent-registration.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Patent Registration</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- International -->
+          <div class="nav-item relative group h-full flex items-center cursor-pointer text-[#374151] hover:text-[#1a237e] transition-colors">
+            <span class="py-4 font-semibold">International <i class="fas fa-chevron-down text-[10px] ml-1.5 opacity-60 transition-transform group-hover:rotate-180"></i></span>
+            <div class="mega-menu absolute top-full right-0 hidden group-hover:block bg-white/95 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-8 min-w-[750px] ring-1 ring-black/5 transform opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-200 origin-top-right">
+              <div class="grid grid-cols-2 gap-10">
+                
+                <!-- Dubai Services Column -->
+                <div>
+                  <h4 class="text-xs font-bold text-navy-800 uppercase tracking-wider border-b-2 border-blue-100 pb-2 mb-4">Dubai Services</h4>
+                  <div class="flex flex-col gap-3">
+                    <a href="dubai-freezone.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Dubai Freezone Company</a>
+                    <a href="dubai-mainland.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Dubai Mainland Company</a>
+                    <a href="dubai-offshore.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Dubai Offshore Company</a>
+                    <a href="dubai-vat.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Dubai VAT Registration</a>
+                    <a href="dubai-visa.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Dubai Visa Services</a>
+                    <a href="dubai-incorporation.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Dubai Company Incorporation</a>
+                    <a href="dubai-loans.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Dubai Business Loans</a>
+                    <a href="dubai-trademark.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Dubai Trademark Registration</a>
+                    <a href="dubai-license.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Dubai License Services</a>
+                  </div>
+                </div>
+
+                <!-- Global Incorporation Column -->
+                <div>
+                  <h4 class="text-xs font-bold text-navy-800 uppercase tracking-wider border-b-2 border-blue-100 pb-2 mb-4">Global Incorporation</h4>
+                  <div class="flex flex-col gap-3">
+                    <a href="us-incorporation.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">US Incorporation</a>
+                    <a href="singapore-incorporation.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Singapore Incorporation</a>
+                    <a href="uk-incorporation.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">UK Incorporation</a>
+                    <a href="netherlands-incorporation.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Netherlands Incorporation</a>
+                    <a href="hong-kong-incorporation.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-3 py-1.5 rounded-md transition-colors">Hong Kong Incorporation</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-item relative group h-full flex items-center cursor-pointer text-[#374151] hover:text-[#1a237e] transition-colors">
+            <span class="py-4 font-semibold">Skill India <i class="fas fa-chevron-down text-[10px] ml-1.5 opacity-60 transition-transform group-hover:rotate-180"></i></span>
+            <div class="mega-menu absolute top-full right-0 hidden group-hover:block bg-white/95 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-6 min-w-[300px] ring-1 ring-black/5 transform opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-200 origin-top-right">
+              <div class="flex flex-col gap-2">
+                <a href="nsdc.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-4 py-2.5 rounded-lg transition-colors">NSDC Affiliation</a>
+                <a href="ncvet-assessment.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-4 py-2.5 rounded-lg transition-colors">NCVET Assessment Body</a>
+                <a href="ncvet-awarding.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-4 py-2.5 rounded-lg transition-colors">NCVET Awarding Body</a>
+                <a href="tot.html" class="text-sm font-medium text-gray-700 hover:text-[#1a237e] hover:bg-blue-50 px-4 py-2.5 rounded-lg transition-colors">TOT & Master TOT Certification</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desktop Hamburger (More Options) -->
+          <div class="nav-item relative group h-full flex items-center cursor-pointer text-[#374151] hover:text-[#1a237e] transition-colors ml-4">
+            <span class="py-4 text-xl flex items-center h-full"><i class="fas fa-bars"></i></span>
+            <div class="mega-menu absolute top-[90%] right-0 hidden group-hover:block bg-white/95 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl py-2 min-w-[250px] ring-1 ring-black/5 transform opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-200 origin-top-right">
+              <div class="flex flex-col">
+                <a href="events.html" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a237e] font-medium transition-colors border-b border-gray-100/50">Events</a>
+                <a href="products.html" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a237e] font-medium transition-colors border-b border-gray-100/50">Products</a>
+                <a href="blogs.html" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a237e] font-medium transition-colors border-b border-gray-100/50">Blogs</a>
+                <a href="about.html" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a237e] font-medium transition-colors border-b border-gray-100/50">About Us</a>
+                <a href="contact.html" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a237e] font-medium transition-colors border-b border-gray-100/50">Contact</a>
+                <a href="documentation.html" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a237e] font-medium transition-colors border-b border-gray-100/50">Documentation</a>
+                <a href="careers.html" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a237e] font-medium transition-colors border-b border-gray-100/50">Careers</a>
+                <a href="refer.html" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a237e] font-medium transition-colors border-b border-gray-100/50">Refer and Earn</a>
+                <a href="partner.html" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a237e] font-medium transition-colors border-b border-gray-100/50">Partner With Us</a>
+                <a href="experts.html" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1a237e] font-medium transition-colors">Connect with Experts</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Mobile Hamburger Icon -->
+        <button id="mob-nav-toggle" class="lg:hidden text-gray-700 p-2 hover:bg-gray-100 rounded-lg transition-colors">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Nav Sidebar/Dropdown (Fully Responsive Premium Menu) -->
+  <div id="mobile-nav" class="hidden absolute top-full left-0 w-full bg-white shadow-2xl border-t border-gray-100 z-40">
+    <div class="flex flex-col px-6 py-4 max-h-[85vh] overflow-y-auto">
+      
+      <!-- Primary Pages (Top Row equivalent) -->
+      <div class="grid grid-cols-2 gap-3 mb-6 border-b border-gray-100 pb-6">
+        <a href="index.html" class="px-4 py-2.5 bg-blue-50/50 text-[#1a237e] rounded-xl text-sm font-bold border border-blue-100/50 flex items-center gap-2"><i class="fas fa-home opacity-70"></i> Home</a>
+        <a href="overview.html" class="px-4 py-2.5 bg-blue-50/50 text-[#1a237e] rounded-xl text-sm font-bold border border-blue-100/50 flex items-center gap-2"><i class="fas fa-info-circle opacity-70"></i> Overview</a>
+        <a href="benefits.html" class="px-4 py-2.5 bg-blue-50/50 text-[#1a237e] rounded-xl text-sm font-bold border border-blue-100/50 flex items-center gap-2"><i class="fas fa-star opacity-70"></i> Benefits</a>
+        <a href="process.html" class="px-4 py-2.5 bg-blue-50/50 text-[#1a237e] rounded-xl text-sm font-bold border border-blue-100/50 flex items-center gap-2"><i class="fas fa-cogs opacity-70"></i> Process</a>
+        <a href="documents.html" class="px-4 py-2.5 bg-blue-50/50 text-[#1a237e] rounded-xl text-sm font-bold border border-blue-100/50 flex items-center gap-2"><i class="fas fa-file-alt opacity-70"></i> Documents</a>
+        <a href="faq.html" class="px-4 py-2.5 bg-blue-50/50 text-[#1a237e] rounded-xl text-sm font-bold border border-blue-100/50 flex items-center gap-2"><i class="fas fa-question-circle opacity-70"></i> FAQs</a>
+      </div>
+
+      <!-- Expandable Mega Menus -->
+      <div class="flex flex-col">
+        
+        <!-- Business -->
+        <details class="group border-b border-gray-100">
+          <summary class="flex justify-between items-center font-bold text-gray-800 text-base cursor-pointer list-none py-4 hover:text-[#1a237e] transition-colors">
+            <span>Business</span>
+            <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+              <i class="fas fa-chevron-down text-xs"></i>
+            </span>
+          </summary>
+          <div class="text-sm font-medium text-gray-600 mb-4 flex flex-col gap-3 pl-4 border-l-2 border-blue-100/50 animate-fade-in-down">
+            <a href="partnership-registration.html" class="hover:text-blue-600 block">Partnership</a>
+            <a href="business-registration.html#pvt-ltd" class="hover:text-blue-600 block">Private Limited Company</a>
+            <a href="business-registration.html#llp" class="hover:text-blue-600 block">Limited Liability Partnership</a>
+            <a href="business-registration.html#opc" class="hover:text-blue-600 block">One Person Company</a>
+            <a href="business-registration.html#section8" class="hover:text-blue-600 block">Section 8 Company</a>
+            <a href="business-registration.html#nidhi" class="hover:text-blue-600 block">Nidhi Company</a>
+            <a href="business-registration.html" class="text-blue-600 font-bold mt-2">View all Business Services &rarr;</a>
+          </div>
+        </details>
+
+        <!-- Certificate -->
+        <details class="group border-b border-gray-100">
+          <summary class="flex justify-between items-center font-bold text-gray-800 text-base cursor-pointer list-none py-4 hover:text-[#1a237e] transition-colors">
+            <span>Certificate</span>
+            <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+              <i class="fas fa-chevron-down text-xs"></i>
+            </span>
+          </summary>
+          <div class="text-sm font-medium text-gray-600 mb-4 flex flex-col gap-3 pl-4 border-l-2 border-blue-100/50 animate-fade-in-down">
+            <a href="licenses.html#fssai" class="hover:text-blue-600 block">FSSAI Licenses</a>
+            <a href="licenses.html#msme" class="hover:text-blue-600 block">MSME / Udyam Registration</a>
+            <a href="licenses.html#iso" class="hover:text-blue-600 block">ISO Certification</a>
+            <a href="licenses.html#shop-act" class="hover:text-blue-600 block">Shop & Establishment</a>
+            <a href="licenses.html#rera" class="hover:text-blue-600 block">RERA Registration</a>
+            <a href="licenses.html" class="text-blue-600 font-bold mt-2">View all Certificates &rarr;</a>
+          </div>
+        </details>
+
+        <!-- Compliance -->
+        <details class="group border-b border-gray-100">
+          <summary class="flex justify-between items-center font-bold text-gray-800 text-base cursor-pointer list-none py-4 hover:text-[#1a237e] transition-colors">
+            <span>Compliance</span>
+            <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+              <i class="fas fa-chevron-down text-xs"></i>
+            </span>
+          </summary>
+                    <div class="text-sm font-medium text-gray-600 mb-4 flex flex-col pl-4 border-l-2 border-blue-100/50 animate-fade-in-down h-64 overflow-y-auto">
+            <a href="adt-1-filing.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">ADT-1 Filing</a>
+            <a href="dpt-3-filing.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">DPT-3 Filing</a>
+            <a href="business-plan.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Business Plan</a>
+            <a href="aoa-amendment.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">AOA Amendment</a>
+            <a href="moa-amendment.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">MOA Amendment</a>
+            <a href="share-transfer.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Share Transfer</a>
+            <a href="demat-of-shares.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Demat of Shares</a>
+            <a href="remove-director.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Remove Director</a>
+            <a href="director-change.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Director Change</a>
+
+            <a href="llp-compliance.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">LLP Compliance</a>
+            <a href="opc-compliance.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">OPC Compliance</a>
+            <a href="winding-up-llp.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Winding Up - LLP</a>
+            <a href="din-ekyc-filing.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">DIN eKYC Filing</a>
+            <a href="din-reactivation.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">DIN Reactivation</a>
+            <a href="pf-return-filing.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">PF Return Filing</a>
+            <a href="pt-return-filing.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">PT Return Filing</a>
+            <a href="winding-up-company.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Winding Up-Company</a>
+            <a href="company-compliance.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Company Compliance</a>
+
+            <a href="esi-return-filing.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">ESI Return Filing</a>
+            <a href="fla-return-filing.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">FLA Return Filing</a>
+            <a href="llp-form-11-filing.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">LLP Form 11 Filing</a>
+            <a href="dormant-status-filing.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Dormant Status Filing</a>
+            <a href="name-change-company.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Name Change - Company</a>
+            <a href="partnership-compliance.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Partnership Compliance</a>
+            <a href="registered-office-change.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Registered Office Change</a>
+            <a href="proprietorship-compliance.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Proprietorship Compliance</a>
+            <a href="authorized-capital-increase.html" class="hover:text-blue-600 block pl-2 text-[13px] py-1">Authorized Capital Increase</a>
+
+          </div>
+        </details>
+
+        <!-- Taxation -->
+        <details class="group border-b border-gray-100">
+          <summary class="flex justify-between items-center font-bold text-gray-800 text-base cursor-pointer list-none py-4 hover:text-[#1a237e] transition-colors">
+            <span>Taxation</span>
+            <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+              <i class="fas fa-chevron-down text-xs"></i>
+            </span>
+          </summary>
+                    <div class="text-sm font-medium text-gray-600 mb-4 flex flex-col gap-2 pl-4 border-l-2 border-blue-100/50 animate-fade-in-down">
+            <a href="composition-return.html" class="hover:text-blue-600 block pl-2 py-1">Composition Return</a>
+            <a href="gst-cancellation.html" class="hover:text-blue-600 block pl-2 py-1">GST Cancellation</a>
+            <a href="gst-return-filing.html" class="hover:text-blue-600 block pl-2 py-1">GST Return Filing</a>
+            <a href="gst-nil-return.html" class="hover:text-blue-600 block pl-2 py-1">GST Nil Return</a>
+            <a href="itr-1-only-salary.html" class="hover:text-blue-600 block pl-2 py-1">ITR-1 (Only Salary)</a>
+            <a href="itr-2-salary-and-other.html" class="hover:text-blue-600 block pl-2 py-1">ITR-2 (Salary & Other)</a>
+
+            <a href="itr-3-return-filing.html" class="hover:text-blue-600 block pl-2 py-1">ITR-3 Return Filing</a>
+            <a href="itr-4-return-filing.html" class="hover:text-blue-600 block pl-2 py-1">ITR-4 Return Filing</a>
+            <a href="itr-5-return-filing.html" class="hover:text-blue-600 block pl-2 py-1">ITR-5 Return Filing</a>
+            <a href="itr-6-return-filing.html" class="hover:text-blue-600 block pl-2 py-1">ITR-6 Return Filing</a>
+            <a href="itr-7-return-filing.html" class="hover:text-blue-600 block pl-2 py-1">ITR-7 Return Filing</a>
+
+          </div>
+        </details>
+
+        <!-- Exports -->
+        <details class="group border-b border-gray-100">
+          <summary class="flex justify-between items-center font-bold text-gray-800 text-base cursor-pointer list-none py-4 hover:text-[#1a237e] transition-colors">
+            <span>Exports</span>
+            <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+              <i class="fas fa-chevron-down text-xs"></i>
+            </span>
+          </summary>
+                    <div class="text-sm font-medium text-gray-600 mb-4 flex flex-col pl-4 border-l-2 border-blue-100/50 animate-fade-in-down h-64 overflow-y-auto">
+            <a href="council-for-leather-exports.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Council for Leather Exports</a>
+            <a href="handloom-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Handloom Export Promotion Council</a>
+            <a href="ayush-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Ayush Export Promotion Council</a>
+            <a href="plastics-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Plastics Export Promotion Council</a>
+            <a href="services-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Services Export Promotion Council</a>
+            <a href="cotton-textiles-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Cotton Textiles Export Promotion Council</a>
+            <a href="wool-industry-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Wool Industry Export Promotion Council</a>
+            <a href="electronics-computer-software-epc.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Electronics & Computer Software EPC</a>
+            <a href="gem-jewellery-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Gem & Jewellery Export Promotion Council</a>
+            <a href="cashew-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Cashew Export Promotion Council</a>
+            <a href="wool-woollens-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Wool & Woollens Export Promotion Council</a>
+
+            <a href="sports-goods-toys-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Sports Goods & Toys Export Promotion Council</a>
+            <a href="export-promotion-council-for-handicrafts.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Export Promotion Council for Handicrafts</a>
+            <a href="export-promotion-council-for-eous-sezs.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Export Promotion Council for EOUs & SEZs</a>
+            <a href="management-technical-textiles.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Management & Technical Textiles</a>
+            <a href="rcmc-registration.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">RCMC Registration</a>
+            <a href="apeda-registration.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">APEDA Registration</a>
+            <a href="federation-of-indian-export-organisations.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Federation of Indian Export Organisations</a>
+            <a href="the-indian-silk-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">The Indian Silk Export Promotion Council</a>
+            <a href="indian-oil-seeds-produce-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Indian Oil Seeds & Produce Export Promotion Council</a>
+            <a href="shellac-forest-products-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Shellac & Forest Products Export Promotion Council</a>
+            <a href="powerloom-development-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Powerloom Development & Export Promotion Council</a>
+
+            <a href="project-exports-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Project Exports Promotion Council</a>
+            <a href="pharmaceuticals-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Pharmaceuticals Export Promotion Council</a>
+            <a href="export-promotion-council-for-special-economic-zones.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Export Promotion Council for Special Economic Zones</a>
+            <a href="marine-products-export-development-authority.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Marine Products Export Development Authority</a>
+            <a href="directorate-of-handicrafts-j-k.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Directorate of Handicrafts, J&K</a>
+            <a href="eepc-india.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">EEPC INDIA</a>
+            <a href="telecom-equipment-and-services-epc.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Telecom Equipment and Services EPC</a>
+            <a href="basic-chemicals-cosmetics-dyes-epc.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Basic Chemicals Cosmetics & Dyes EPC</a>
+            <a href="jute-products-development-and-epc.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Jute Products Development and EPC</a>
+            <a href="mobile-and-electronic-devices-epc.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Mobile and Electronic Devices EPC</a>
+            <a href="tea-board.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Tea Board</a>
+
+            <a href="coir-board.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Coir Board</a>
+            <a href="coffee-board.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Coffee Board</a>
+            <a href="rubber-board.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Rubber Board</a>
+            <a href="spices-board.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Spices Board</a>
+            <a href="tobacco-board.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Tobacco Board</a>
+            <a href="capexil.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">CAPEXIL</a>
+            <a href="testepc.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">TESTEPC</a>
+            <a href="coconut-development-board.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Coconut Development Board</a>
+            <a href="carpet-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Carpet Export Promotion Council</a>
+            <a href="apparel-export-promotion-council.html" class="hover:text-blue-600 block pl-2 text-[12px] py-1">Apparel Export Promotion Council</a>
+
+          </div>
+        </details>
+
+        <!-- Funding -->
+        <details class="group border-b border-gray-100">
+          <summary class="flex justify-between items-center font-bold text-gray-800 text-base cursor-pointer list-none py-4 hover:text-[#1a237e] transition-colors">
+            <span>Funding</span>
+            <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+              <i class="fas fa-chevron-down text-xs"></i>
+            </span>
+          </summary>
+          <div class="text-sm font-medium text-gray-600 mb-4 flex flex-col gap-3 pl-4 border-l-2 border-blue-100/50 animate-fade-in-down">
+            <h5 class="font-bold text-gray-800 text-xs uppercase mt-2">Startup Funding</h5>
+            <a href="seed-funding.html" class="hover:text-blue-600 block pl-2">Seed Funding</a>
+            <a href="angel-investment.html" class="hover:text-blue-600 block pl-2">Angel Investment</a>
+            <a href="venture-capital.html" class="hover:text-blue-600 block pl-2">Venture Capital</a>
+            
+            <h5 class="font-bold text-gray-800 text-xs uppercase mt-4">Govt Schemes</h5>
+            <a href="mudra-loan.html" class="hover:text-blue-600 block pl-2">Mudra Loan</a>
+            <a href="cgtmse-scheme.html" class="hover:text-blue-600 block pl-2">CGTMSE Scheme</a>
+            <a href="startup-india-seed-fund.html" class="hover:text-blue-600 block pl-2">Startup India Seed Fund</a>
+          </div>
+        </details>
+
+        <!-- Trademark & IP -->
+        <details class="group border-b border-gray-100">
+          <summary class="flex justify-between items-center font-bold text-gray-800 text-base cursor-pointer list-none py-4 hover:text-[#1a237e] transition-colors">
+            <span>Trademark</span>
+            <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+              <i class="fas fa-chevron-down text-xs"></i>
+            </span>
+          </summary>
+          <div class="text-sm font-medium text-gray-600 mb-4 flex flex-col gap-3 pl-4 border-l-2 border-blue-100/50 animate-fade-in-down">
+            <h5 class="font-bold text-gray-800 text-xs uppercase mt-2">Registration & Objection</h5>
+            <a href="trademark-registration.html" class="hover:text-blue-600 block pl-2">Trademark Registration</a>
+            <a href="trademark-objection.html" class="hover:text-blue-600 block pl-2">Trademark Objection</a>
+            <a href="trademark-certificate.html" class="hover:text-blue-600 block pl-2">Trademark Certificate</a>
+            <a href="trademark-opposition.html" class="hover:text-blue-600 block pl-2">Trademark Opposition</a>
+            <a href="trademark-hearing.html" class="hover:text-blue-600 block pl-2">Trademark Hearing</a>
+            
+            <h5 class="font-bold text-gray-800 text-xs uppercase mt-4">Maintenance & Actions</h5>
+            <a href="trademark-rectification.html" class="hover:text-blue-600 block pl-2">Trademark Rectification</a>
+            <a href="tm-infringement.html" class="hover:text-blue-600 block pl-2">TM Infringement Notice</a>
+            <a href="trademark-renewal.html" class="hover:text-blue-600 block pl-2">Trademark Renewal</a>
+            <a href="trademark-transfer.html" class="hover:text-blue-600 block pl-2">Trademark Transfer</a>
+            <a href="expedited-trademark.html" class="hover:text-blue-600 block pl-2">Expedited Trademark Reg.</a>
+
+            <h5 class="font-bold text-gray-800 text-xs uppercase mt-4">Design & Copyright</h5>
+            <a href="design-registration.html" class="hover:text-blue-600 block pl-2">Design Registration</a>
+            <a href="design-objection.html" class="hover:text-blue-600 block pl-2">Design Objection</a>
+            <a href="copyright-registration.html" class="hover:text-blue-600 block pl-2">Copyright Registration</a>
+            <a href="copyright-objection.html" class="hover:text-blue-600 block pl-2">Copyright Objection</a>
+            <a href="patent-registration.html" class="hover:text-blue-600 block pl-2">Patent Registration</a>
+          </div>
+        </details>
+
+        <!-- International -->
+        <details class="group border-b border-gray-100">
+          <summary class="flex justify-between items-center font-bold text-gray-800 text-base cursor-pointer list-none py-4 hover:text-[#1a237e] transition-colors">
+            <span>International</span>
+            <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+              <i class="fas fa-chevron-down text-xs"></i>
+            </span>
+          </summary>
+          <div class="text-sm font-medium text-gray-600 mb-4 flex flex-col gap-3 pl-4 border-l-2 border-blue-100/50 animate-fade-in-down">
+            <h5 class="font-bold text-gray-800 text-xs uppercase mt-2">Dubai Services</h5>
+            <a href="dubai-freezone.html" class="hover:text-blue-600 block pl-2">Dubai Freezone Company</a>
+            <a href="dubai-mainland.html" class="hover:text-blue-600 block pl-2">Dubai Mainland Company</a>
+            <a href="dubai-offshore.html" class="hover:text-blue-600 block pl-2">Dubai Offshore Company</a>
+            <a href="dubai-vat.html" class="hover:text-blue-600 block pl-2">Dubai VAT Registration</a>
+            <a href="dubai-visa.html" class="hover:text-blue-600 block pl-2">Dubai Visa Services</a>
+            <a href="dubai-incorporation.html" class="hover:text-blue-600 block pl-2">Dubai Company Incorporation</a>
+            <a href="dubai-loans.html" class="hover:text-blue-600 block pl-2">Dubai Business Loans</a>
+            <a href="dubai-trademark.html" class="hover:text-blue-600 block pl-2">Dubai Trademark Registration</a>
+            <a href="dubai-license.html" class="hover:text-blue-600 block pl-2">Dubai License Services</a>
+            
+            <h5 class="font-bold text-gray-800 text-xs uppercase mt-4">Global Incorporation</h5>
+            <a href="us-incorporation.html" class="hover:text-blue-600 block pl-2">US Incorporation</a>
+            <a href="singapore-incorporation.html" class="hover:text-blue-600 block pl-2">Singapore Incorporation</a>
+            <a href="uk-incorporation.html" class="hover:text-blue-600 block pl-2">UK Incorporation</a>
+            <a href="netherlands-incorporation.html" class="hover:text-blue-600 block pl-2">Netherlands Incorporation</a>
+            <a href="hong-kong-incorporation.html" class="hover:text-blue-600 block pl-2">Hong Kong Incorporation</a>
+          </div>
+        </details>
+
+        <!-- Skill India (Newly Added) -->
+        <details class="group border-b border-gray-100">
+          <summary class="flex justify-between items-center font-bold text-gray-800 text-base cursor-pointer list-none py-4 hover:text-[#1a237e] transition-colors">
+            <span>Skill India</span>
+            <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+              <i class="fas fa-chevron-down text-xs"></i>
+            </span>
+          </summary>
+          <div class="text-sm font-medium text-gray-600 mb-4 flex flex-col gap-3 pl-4 border-l-2 border-blue-100/50 animate-fade-in-down">
+            <a href="nsdc.html" class="hover:text-blue-600 block">NSDC Affiliation</a>
+            <a href="ncvet-assessment.html" class="hover:text-blue-600 block">NCVET Assessment Body</a>
+            <a href="ncvet-awarding.html" class="hover:text-blue-600 block">NCVET Awarding Body</a>
+            <a href="tot.html" class="hover:text-blue-600 block">TOT & Master TOT Certification</a>
+          </div>
+        </details>
+
+        <!-- More Option Links (Flat) -->
+        <div class="mt-4 grid grid-cols-2 gap-2 pb-6">
+          <a href="events.html" class="text-sm font-medium text-gray-700 py-2 hover:text-[#1a237e]"><i class="fas fa-calendar-alt w-5 opacity-70"></i> Events</a>
+          <a href="products.html" class="text-sm font-medium text-gray-700 py-2 hover:text-[#1a237e]"><i class="fas fa-box w-5 opacity-70"></i> Products</a>
+          <a href="blogs.html" class="text-sm font-medium text-gray-700 py-2 hover:text-[#1a237e]"><i class="fas fa-blog w-5 opacity-70"></i> Blogs</a>
+          <a href="about.html" class="text-sm font-medium text-gray-700 py-2 hover:text-[#1a237e]"><i class="fas fa-users w-5 opacity-70"></i> About Us</a>
+          <a href="contact.html" class="text-sm font-medium text-gray-700 py-2 hover:text-[#1a237e]"><i class="fas fa-headset w-5 opacity-70"></i> Contact</a>
+          <a href="documentation.html" class="text-sm font-medium text-gray-700 py-2 hover:text-[#1a237e]"><i class="fas fa-book w-5 opacity-70"></i> Docs</a>
+          <a href="careers.html" class="text-sm font-medium text-gray-700 py-2 hover:text-[#1a237e]"><i class="fas fa-briefcase w-5 opacity-70"></i> Careers</a>
+          <a href="refer.html" class="text-sm font-medium text-gray-700 py-2 hover:text-[#1a237e]"><i class="fas fa-share-alt w-5 opacity-70"></i> Refer</a>
+          <a href="partner.html" class="text-sm font-medium text-gray-700 py-2 hover:text-[#1a237e]"><i class="fas fa-handshake w-5 opacity-70"></i> Partner</a>
+          <a href="experts.html" class="text-sm font-medium text-gray-700 py-2 hover:text-[#1a237e]"><i class="fas fa-user-tie w-5 opacity-70"></i> Experts</a>
+        </div>
+      </div>
+      
+      <!-- Apply Mobile Button -->
+      <a href="apply.html" class="w-full mt-4 bg-[#1a237e] text-white font-bold py-4 rounded-xl text-center shadow-lg hover:bg-blue-800 transition-colors">
+        Apply Now
+      </a>
+
+    </div>
+  </div>
+
+  <style>
+    /* Details tag summary marker removal for Safari/old browsers */
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+    
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-down {
+      animation: fadeInDown 0.3s ease forwards;
+    }
+  </style>
+</header>
+
+<script>
+  // Mobile Nav Toggle
+  const mobToggle = document.getElementById('mob-nav-toggle');
+  const mobNav = document.getElementById('mobile-nav');
+  if(mobToggle && mobNav) {
+    mobToggle.addEventListener('click', () => {
+      mobNav.classList.toggle('hidden');
+    });
+  }
+
+  // Hide bottom row on scroll (Desktop)
+  const bottomRow = document.querySelector('.nav-bottom-row');
+  if(bottomRow) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        bottomRow.style.height = '0';
+        bottomRow.style.opacity = '0';
+        bottomRow.style.overflow = 'hidden';
+      } else {
+        bottomRow.style.height = '56px'; // h-14 is 3.5rem = 56px
+        bottomRow.style.opacity = '1';
+        bottomRow.style.overflow = 'visible';
+      }
+    });
+  }
+</script>
+
+<script>
+  // Mobile Nav Toggle
+  const mobToggle = document.getElementById('mob-nav-toggle');
+  const mobNav = document.getElementById('mobile-nav');
+  if(mobToggle && mobNav) {
+    mobToggle.addEventListener('click', () => {
+      mobNav.classList.toggle('hidden');
+    });
+  }
+
+  // Hide bottom row on scroll (Desktop)
+  const bottomRow = document.querySelector('.nav-bottom-row');
+  if(bottomRow) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        bottomRow.style.height = '0';
+        bottomRow.style.opacity = '0';
+        bottomRow.style.overflow = 'hidden';
+      } else {
+        bottomRow.style.height = '56px'; // h-14 is 3.5rem = 56px
+        bottomRow.style.opacity = '1';
+        bottomRow.style.overflow = 'visible';
+      }
+    });
+  }
+</script>
+
+<script>
+  // Mobile Nav Toggle
+  const mobToggle = document.getElementById('mob-nav-toggle');
+  const mobNav = document.getElementById('mobile-nav');
+  if(mobToggle && mobNav) {
+    mobToggle.addEventListener('click', () => {
+      mobNav.classList.toggle('hidden');
+    });
+  }
+
+  // Hide bottom row on scroll (Desktop)
+  const bottomRow = document.querySelector('.nav-bottom-row');
+  if(bottomRow) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        bottomRow.style.height = '0';
+        bottomRow.style.opacity = '0';
+        bottomRow.style.overflow = 'hidden';
+      } else {
+        bottomRow.style.height = '56px'; // h-14 is 3.5rem = 56px
+        bottomRow.style.opacity = '1';
+        bottomRow.style.overflow = 'visible';
+      }
+    });
+  }
+</script>
+
+<!-- Placeholder for dynamically injected header -->
+
+<!-- HERO SECTION -->
+<section class="hero-bg min-h-[55vh] flex items-center pt-32 pb-20 relative" id="hero">
+  <div class="hero-overlay sky"></div>
+  
+  <div class="max-w-7xl mx-auto px-4 relative z-10 w-full text-center">
+    <div class="gsap-reveal inline-flex items-center gap-2 bg-sky-900/30 border border-sky-400/20 rounded-full px-5 py-2 mb-8 backdrop-blur-md">
+      <div class="w-2 h-2 bg-sky-400 rounded-full animate-ping"></div>
+      <span class="text-xs font-bold tracking-widest text-sky-200 uppercase">EXPORT PROMOTION & RCMC</span>
+    </div>
+    
+    <h1 class="gsap-reveal text-5xl md:text-7xl font-black leading-tight mb-6 tracking-tighter max-w-5xl mx-auto text-white">
+      <span class="bg-gradient-to-r from-sky-200 to-sky-400 bg-clip-text text-transparent">Federation of Indian Export Organisations</span>
+    </h1>
+    
+    <p class="gsap-reveal text-xl text-sky-50/90 mb-0 leading-relaxed max-w-3xl mx-auto font-light">
+      Accelerate your global trade journey with our expert assistance for Federation of Indian Export Organisations registration, compliance, and export benefits.
+    </p>
+  </div>
+</section>
+
+<!-- CONTENT SECTION -->
+<section class="py-24 bg-white relative">
+  <div class="max-w-7xl mx-auto px-4">
+    
+    <div class="grid lg:grid-cols-2 gap-16 items-center mb-24">
+      <div class="gsap-reveal-left">
+        <h2 class="text-4xl font-black text-[#0f172a] mb-6">Global Expansion Made Easy</h2>
+        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+          Registering with the Federation of Indian Export Organisations is a critical step for Indian exporters. It not only provides you with a valid Registration-cum-Membership Certificate (RCMC) but also unlocks numerous government incentives, subsidies, and global market access.
+        </p>
+        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+          Our team handles the entire documentation, application filing, and liaison process to ensure your registration is completed swiftly and without rejections.
+        </p>
+        <ul class="space-y-4 mt-8">
+          <li class="flex items-center gap-4 text-gray-700 font-medium"><i class="fas fa-check-circle text-sky-600 text-xl"></i> Hassle-free RCMC Issuance</li>
+          <li class="flex items-center gap-4 text-gray-700 font-medium"><i class="fas fa-check-circle text-sky-600 text-xl"></i> Export Incentive Claim Assistance</li>
+          <li class="flex items-center gap-4 text-gray-700 font-medium"><i class="fas fa-check-circle text-sky-600 text-xl"></i> Dedicated Trade Consultants</li>
+        </ul>
+      </div>
+      <div class="gsap-reveal-right">
+        <div class="bg-sky-50 p-10 rounded-[2rem] border border-sky-100 shadow-xl relative overflow-hidden text-center flex flex-col items-center justify-center h-full min-h-[400px]">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-sky-200 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/4"></div>
+          <div class="w-24 h-24 bg-sky-100 rounded-2xl flex items-center justify-center text-sky-600 text-5xl mb-8 relative z-10 shadow-inner">
+            <i class="fas fa-ship"></i>
+          </div>
+          <h3 class="text-3xl font-bold text-[#0c4a6e] mb-4 relative z-10">Export Without Borders</h3>
+          <p class="text-gray-600 relative z-10 text-lg">We simplify export compliance so you can focus on building international relationships and scaling your business.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-12 gsap-reveal">
+      <h3 class="text-3xl font-black text-[#0f172a] mb-6">Start Your Export Journey Today</h3>
+      <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Contact our export registration specialists to begin your application for the Federation of Indian Export Organisations.</p>
+      <a href="contact.html" class="inline-block px-10 py-5 bg-[#0c4a6e] text-white font-black text-xl rounded-2xl hover:bg-sky-900 transition-all transform hover:scale-105 shadow-2xl shadow-sky-900/30">
+        Apply Now
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Placeholder for dynamically injected footer -->
+
+<script>
+  // Initialize Lenis Smooth Scrolling
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smooth: true,
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+
+  // GSAP Animations
+  gsap.registerPlugin(ScrollTrigger);
+
+  // General Reveal
+  gsap.utils.toArray('.gsap-reveal').forEach(el => {
+    gsap.fromTo(el, 
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, ease: "power3.out", scrollTrigger: { trigger: el, start: "top 85%" } }
+    );
+  });
+  
+  gsap.fromTo('.gsap-reveal-left', 
+    { x: -50, opacity: 0 },
+    { x: 0, opacity: 1, duration: 1, ease: "power3.out", scrollTrigger: { trigger: '.gsap-reveal-left', start: "top 85%" } }
+  );
+
+  gsap.fromTo('.gsap-reveal-right', 
+    { x: 50, opacity: 0 },
+    { x: 0, opacity: 1, duration: 1, ease: "power3.out", scrollTrigger: { trigger: '.gsap-reveal-right', start: "top 85%" } }
+  );
+</script>
+
+<!-- =========================================================
+     GLOBAL FOOTER
+     ========================================================= -->
+<!-- =========================================================
+     GLOBAL FOOTER
+     ========================================================= -->
+<footer class="bg-[#2a303f] text-gray-300 w-full pt-16 pb-8 border-t border-gray-800" id="global-footer">
+  <div class="max-w-7xl mx-auto px-4 lg:px-8">
+    
+    <!-- Top Section: Logo & Social -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-700 pb-8 mb-10">
+      <div class="mb-6 md:mb-0">
+        <!-- Logo Match -->
+        <a href="index.html" class="flex flex-col">
+          <div class="text-[32px] font-black text-white tracking-tight leading-none">UDYOG</div>
+          <div class="flex items-center gap-1 mt-1">
+            <span class="text-[12px] font-bold text-white tracking-wider leading-none">SUVIDHA KENDRA</span>
+            <div class="grid grid-cols-2 gap-[2px]">
+              <div class="w-1.5 h-1.5 bg-[#84cc16]"></div>
+              <div class="w-1.5 h-1.5 bg-[#84cc16]"></div>
+              <div class="w-1.5 h-1.5 bg-[#84cc16]"></div>
+              <div class="w-1.5 h-1.5 bg-[#84cc16]"></div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="flex flex-col items-start md:items-end gap-4">
+        <a href="mailto:support@udyogsuvidhakendra.in" class="flex items-center gap-2 text-gray-300 hover:text-white transition-colors font-medium">
+          <i class="fas fa-envelope"></i> support@udyogsuvidhakendra.in
+        </a>
+        <div class="flex items-center gap-4 text-xl">
+          <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle Section: Links & Disclaimer -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 border-b border-gray-700 pb-12 mb-12">
+      <!-- Company -->
+      <div class="md:col-span-2 flex flex-col gap-4">
+        <h3 class="text-white font-bold text-sm tracking-wider uppercase mb-2">Company</h3>
+        <a href="about.html" class="text-sm text-gray-400 hover:text-white transition-colors">About Us</a>
+        <a href="contact.html" class="text-sm text-gray-400 hover:text-white transition-colors">Contact Us</a>
+        <a href="careers.html" class="text-sm text-gray-400 hover:text-white transition-colors">Careers</a>
+        <a href="pricing.html" class="text-sm text-gray-400 hover:text-white transition-colors">Pricing</a>
+        <a href="reviews.html" class="text-sm text-gray-400 hover:text-white transition-colors">Reviews</a>
+      </div>
+      <!-- Legal -->
+      <div class="md:col-span-2 flex flex-col gap-4">
+        <h3 class="text-white font-bold text-sm tracking-wider uppercase mb-2">Legal</h3>
+        <a href="terms.html" class="text-sm text-gray-400 hover:text-white transition-colors">Terms & Condition</a>
+        <a href="shipping.html" class="text-sm text-gray-400 hover:text-white transition-colors">Shipping Policy</a>
+        <a href="privacy.html" class="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+        <a href="refund.html" class="text-sm text-gray-400 hover:text-white transition-colors">Refund Policies</a>
+        <a href="disclaimer.html" class="text-sm text-gray-400 hover:text-white transition-colors">Disclaimer Policy</a>
+      </div>
+      <!-- Disclaimer -->
+      <div class="md:col-span-8 flex flex-col gap-4">
+        <h3 class="text-white font-bold text-sm tracking-wider uppercase mb-2">Disclaimer</h3>
+        <p class="text-sm text-gray-400 leading-relaxed text-justify">
+          Udyog Suvidha Kendra is a privately owned consultancy and is not associated with, endorsed by, or operated by any government department or official government portal. Many of the registrations and certificates referenced on this website can be applied for directly by the applicant on the relevant official portals, often free of cost or at lower government fees. Any fee charged by us is solely for our professional and application-assistance services — including accurate preparation, document review, and end-to-end filing support — and is separate from any government fee. We are not authorised to collect government or statutory fees on behalf of any authority. Final approval, issuance, and processing timelines for any registration are determined solely by the relevant government authority and are outside our control. Information collected from users is used only to provide the requested services, in accordance with our Privacy Policy. Udyog Suvidha Kendra® is a registered trademark (Class 36), and the name, logo, and content of this website are the property of Huetech Consultancy Services Private Limited.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tools & Documents Section -->
+    <div class="flex flex-col gap-10 border-b border-gray-700 pb-12 mb-10">
+      <!-- Tools -->
+      <div>
+        <h3 class="text-white font-bold text-sm tracking-wider uppercase mb-5">Tools</h3>
+        <div class="flex flex-wrap gap-2.5">
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">GST Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">GST Verification Tool</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">GST Number Lookup</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Income Tax Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">TDS Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Tax Saving Calculator</a>
+          
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">IT Refund Status Checker</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">HRA Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Salary Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">EMI Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Home Loan EMI Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Compound Interest Calculator</a>
+
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">SIP Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Mutual Fund Returns Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Lumpsum Returns Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Fixed Deposit Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Recurring Deposit Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">PPF Calculator</a>
+          
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">EPF Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">NPS Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Currency Converter</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Currency Exchange Calculator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">IFSC Code Finder</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">HSN Code Finder</a>
+
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Product HSN Code Search</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Service HSN Code Lookup</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Cement HSN Code Finder</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Transport HSN Code Finder</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Plastic HSN Code Finder</a>
+
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Automobile HSN Code Finder</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Electronics HSN Code Finder</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Food Product HSN Codes</a>
+        </div>
+      </div>
+
+      <!-- Documents -->
+      <div>
+        <h3 class="text-white font-bold text-sm tracking-wider uppercase mb-5">Documents</h3>
+        <div class="flex flex-wrap gap-2.5">
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">GST Invoice Template</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">GST Invoice Sample</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Rental Agreement Template</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Commercial Lease Template</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Partnership Deed Template</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Affidavit Templates</a>
+
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Power of Attorney Template</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Income Certificate Sample</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Rent Receipt Generator</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Delivery Challan Template</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">GST Consent Letter Template</a>
+
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">No Objection Certificate Template</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Authorized Signatory Declaration for GST</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Salary Slip Template</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Appointment Letter Template</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Relieving Letter Template</a>
+
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Experience Letter Template</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Resignation Letter Template</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Offer Letter Template</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Bonafide Certificate Template</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Legal Heir Certificate</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Loan Agreement</a>
+
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Memorandum of Understanding</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Business Collaboration Agreement</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Debt Settlement Agreement</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Succession Certificate</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Succession Agreement</a>
+
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Solvency Certificate</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Income and Expenditure Declaration</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Commercial Loan Agreement</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Service Contract Agreement</a>
+          <a href="#" class="px-3.5 py-1.5 bg-[#363e4f] text-gray-300 text-xs rounded hover:bg-[#4a5568] hover:text-white transition-colors border border-gray-700">Letter of Credit</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blogs & News -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 border-b border-gray-700 pb-10 mb-8">
+      <div>
+        <h3 class="text-white font-bold text-sm tracking-wider uppercase mb-5">Featured Blogs</h3>
+        <p class="text-gray-500 text-sm">Unable to load blogs</p>
+      </div>
+      <div>
+        <h3 class="text-white font-bold text-sm tracking-wider uppercase mb-5">Trending News</h3>
+        <p class="text-gray-500 text-sm">Unable to load news</p>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 pb-4">
+      <div class="text-xs text-white font-medium">
+        All Rights Reserved. Udyog Suvidha Kendra® is a Registered Trademark © 2026
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="text-white font-medium text-sm flex items-center gap-2">
+          <i class="fas fa-shield-alt text-[#f97316]"></i> Secured Payments
+        </span>
+        <div class="flex items-center gap-3 text-xl text-white">
+          <i class="fas fa-lock"></i>
+          <i class="fas fa-credit-card"></i>
+          <i class="fab fa-cc-mastercard"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
