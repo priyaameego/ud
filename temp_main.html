@@ -1,0 +1,613 @@
+
+
+
+<script>
+  // Mobile Nav Toggle
+  const mobToggle = document.getElementById('mob-nav-toggle');
+  const mobNav = document.getElementById('mobile-nav');
+  if(mobToggle && mobNav) {
+    mobToggle.addEventListener('click', () => {
+      mobNav.classList.toggle('hidden');
+    });
+  }
+
+  // Dual Navbar Scroll Logic
+  const topRow = document.querySelector('.top-row');
+  const bottomRow = document.querySelector('.nav-bottom-row');
+  const nav2Top = document.querySelector('.nav2-top-row');
+  const premiumNavbar = document.getElementById('premium-navbar');
+  
+  // Set initial state
+  if (bottomRow) {
+    bottomRow.style.height = '0';
+    bottomRow.style.opacity = '0';
+    bottomRow.style.overflow = 'hidden';
+  }
+  if (nav2Top) {
+    nav2Top.style.height = '0';
+    nav2Top.style.opacity = '0';
+    nav2Top.style.overflow = 'hidden';
+    nav2Top.style.padding = '0';
+  }
+
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    
+    if (currentScrollY > 50 && currentScrollY > lastScrollY) {
+      // Scrolling DOWN
+      if(topRow) { 
+        topRow.style.height = '0'; 
+        topRow.style.opacity = '0'; 
+        topRow.style.overflow = 'hidden'; 
+        topRow.style.padding = '0'; 
+      }
+      if(nav2Top) { 
+        nav2Top.style.height = 'auto'; 
+        nav2Top.style.opacity = '1'; 
+        nav2Top.style.overflow = 'visible'; 
+        nav2Top.style.padding = '0.5rem 0'; 
+      }
+      if(bottomRow) { 
+        bottomRow.style.height = '56px'; 
+        bottomRow.style.opacity = '1'; 
+        bottomRow.style.overflow = 'visible'; 
+      }
+      if(premiumNavbar) {
+        premiumNavbar.classList.add('shadow-md');
+        premiumNavbar.classList.remove('shadow-sm');
+      }
+    } else if (currentScrollY < lastScrollY || currentScrollY <= 50) {
+      // Scrolling UP or at top
+      if(topRow) { 
+        topRow.style.height = 'auto'; 
+        topRow.style.opacity = '1'; 
+        topRow.style.overflow = 'visible'; 
+        topRow.style.padding = '0.75rem 0'; 
+      }
+      if(nav2Top) { 
+        nav2Top.style.height = '0'; 
+        nav2Top.style.opacity = '0'; 
+        nav2Top.style.overflow = 'hidden'; 
+        nav2Top.style.padding = '0'; 
+      }
+      if(bottomRow) { 
+        bottomRow.style.height = '0'; 
+        bottomRow.style.opacity = '0'; 
+        bottomRow.style.overflow = 'hidden'; 
+      }
+      if(currentScrollY <= 50 && premiumNavbar) {
+        premiumNavbar.classList.remove('shadow-md');
+        premiumNavbar.classList.add('shadow-sm');
+      }
+    }
+    lastScrollY = currentScrollY;
+  });
+</script>
+
+<script>
+  // Mobile Nav Toggle
+  const mobToggle = document.getElementById('mob-nav-toggle');
+  const mobNav = document.getElementById('mobile-nav');
+  if(mobToggle && mobNav) {
+    mobToggle.addEventListener('click', () => {
+      mobNav.classList.toggle('hidden');
+    });
+  }
+
+  // Dual Navbar Scroll Logic
+  const topRow = document.querySelector('.top-row');
+  const bottomRow = document.querySelector('.nav-bottom-row');
+  const nav2Top = document.querySelector('.nav2-top-row');
+  const premiumNavbar = document.getElementById('premium-navbar');
+  
+  // Set initial state
+  if (bottomRow) {
+    bottomRow.style.height = '0';
+    bottomRow.style.opacity = '0';
+    bottomRow.style.overflow = 'hidden';
+  }
+  if (nav2Top) {
+    nav2Top.style.height = '0';
+    nav2Top.style.opacity = '0';
+    nav2Top.style.overflow = 'hidden';
+    nav2Top.style.padding = '0';
+  }
+
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    
+    if (currentScrollY > 50 && currentScrollY > lastScrollY) {
+      // Scrolling DOWN
+      if(topRow) { 
+        topRow.style.height = '0'; 
+        topRow.style.opacity = '0'; 
+        topRow.style.overflow = 'hidden'; 
+        topRow.style.padding = '0'; 
+      }
+      if(nav2Top) { 
+        nav2Top.style.height = 'auto'; 
+        nav2Top.style.opacity = '1'; 
+        nav2Top.style.overflow = 'visible'; 
+        nav2Top.style.padding = '0.5rem 0'; 
+      }
+      if(bottomRow) { 
+        bottomRow.style.height = '56px'; 
+        bottomRow.style.opacity = '1'; 
+        bottomRow.style.overflow = 'visible'; 
+      }
+      if(premiumNavbar) {
+        premiumNavbar.classList.add('shadow-md');
+        premiumNavbar.classList.remove('shadow-sm');
+      }
+    } else if (currentScrollY < lastScrollY || currentScrollY <= 50) {
+      // Scrolling UP or at top
+      if(topRow) { 
+        topRow.style.height = 'auto'; 
+        topRow.style.opacity = '1'; 
+        topRow.style.overflow = 'visible'; 
+        topRow.style.padding = '0.75rem 0'; 
+      }
+      if(nav2Top) { 
+        nav2Top.style.height = '0'; 
+        nav2Top.style.opacity = '0'; 
+        nav2Top.style.overflow = 'hidden'; 
+        nav2Top.style.padding = '0'; 
+      }
+      if(bottomRow) { 
+        bottomRow.style.height = '0'; 
+        bottomRow.style.opacity = '0'; 
+        bottomRow.style.overflow = 'hidden'; 
+      }
+      if(currentScrollY <= 50 && premiumNavbar) {
+        premiumNavbar.classList.remove('shadow-md');
+        premiumNavbar.classList.add('shadow-sm');
+      }
+    }
+    lastScrollY = currentScrollY;
+  });
+</script>
+
+<script>
+  // Mobile Nav Toggle
+  const mobToggle = document.getElementById('mob-nav-toggle');
+  const mobNav = document.getElementById('mobile-nav');
+  if(mobToggle && mobNav) {
+    mobToggle.addEventListener('click', () => {
+      mobNav.classList.toggle('hidden');
+    });
+  }
+
+  // Dual Navbar Scroll Logic
+  const topRow = document.querySelector('.top-row');
+  const bottomRow = document.querySelector('.nav-bottom-row');
+  const nav2Top = document.querySelector('.nav2-top-row');
+  const premiumNavbar = document.getElementById('premium-navbar');
+  
+  // Set initial state
+  if (bottomRow) {
+    bottomRow.style.height = '0';
+    bottomRow.style.opacity = '0';
+    bottomRow.style.overflow = 'hidden';
+  }
+  if (nav2Top) {
+    nav2Top.style.height = '0';
+    nav2Top.style.opacity = '0';
+    nav2Top.style.overflow = 'hidden';
+    nav2Top.style.padding = '0';
+  }
+
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    
+    if (currentScrollY > 50 && currentScrollY > lastScrollY) {
+      // Scrolling DOWN
+      if(topRow) { 
+        topRow.style.height = '0'; 
+        topRow.style.opacity = '0'; 
+        topRow.style.overflow = 'hidden'; 
+        topRow.style.padding = '0'; 
+      }
+      if(nav2Top) { 
+        nav2Top.style.height = 'auto'; 
+        nav2Top.style.opacity = '1'; 
+        nav2Top.style.overflow = 'visible'; 
+        nav2Top.style.padding = '0.5rem 0'; 
+      }
+      if(bottomRow) { 
+        bottomRow.style.height = '56px'; 
+        bottomRow.style.opacity = '1'; 
+        bottomRow.style.overflow = 'visible'; 
+      }
+      if(premiumNavbar) {
+        premiumNavbar.classList.add('shadow-md');
+        premiumNavbar.classList.remove('shadow-sm');
+      }
+    } else if (currentScrollY < lastScrollY || currentScrollY <= 50) {
+      // Scrolling UP or at top
+      if(topRow) { 
+        topRow.style.height = 'auto'; 
+        topRow.style.opacity = '1'; 
+        topRow.style.overflow = 'visible'; 
+        topRow.style.padding = '0.75rem 0'; 
+      }
+      if(nav2Top) { 
+        nav2Top.style.height = '0'; 
+        nav2Top.style.opacity = '0'; 
+        nav2Top.style.overflow = 'hidden'; 
+        nav2Top.style.padding = '0'; 
+      }
+      if(bottomRow) { 
+        bottomRow.style.height = '0'; 
+        bottomRow.style.opacity = '0'; 
+        bottomRow.style.overflow = 'hidden'; 
+      }
+      if(currentScrollY <= 50 && premiumNavbar) {
+        premiumNavbar.classList.remove('shadow-md');
+        premiumNavbar.classList.add('shadow-sm');
+      }
+    }
+    lastScrollY = currentScrollY;
+  });
+</script>
+
+<script>
+  // Mobile Nav Toggle
+  const mobToggle = document.getElementById('mob-nav-toggle');
+  const mobNav = document.getElementById('mobile-nav');
+  if(mobToggle && mobNav) {
+    mobToggle.addEventListener('click', () => {
+      mobNav.classList.toggle('hidden');
+    });
+  }
+
+  // Dual Navbar Scroll Logic
+  const topRow = document.querySelector('.top-row');
+  const bottomRow = document.querySelector('.nav-bottom-row');
+  const nav2Top = document.querySelector('.nav2-top-row');
+  const premiumNavbar = document.getElementById('premium-navbar');
+  
+  // Set initial state
+  if (bottomRow) {
+    bottomRow.style.height = '0';
+    bottomRow.style.opacity = '0';
+    bottomRow.style.overflow = 'hidden';
+  }
+  if (nav2Top) {
+    nav2Top.style.height = '0';
+    nav2Top.style.opacity = '0';
+    nav2Top.style.overflow = 'hidden';
+    nav2Top.style.padding = '0';
+  }
+
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    
+    if (currentScrollY > 50 && currentScrollY > lastScrollY) {
+      // Scrolling DOWN
+      if(topRow) { 
+        topRow.style.height = '0'; 
+        topRow.style.opacity = '0'; 
+        topRow.style.overflow = 'hidden'; 
+        topRow.style.padding = '0'; 
+      }
+      if(nav2Top) { 
+        nav2Top.style.height = 'auto'; 
+        nav2Top.style.opacity = '1'; 
+        nav2Top.style.overflow = 'visible'; 
+        nav2Top.style.padding = '0.5rem 0'; 
+      }
+      if(bottomRow) { 
+        bottomRow.style.height = '56px'; 
+        bottomRow.style.opacity = '1'; 
+        bottomRow.style.overflow = 'visible'; 
+      }
+      if(premiumNavbar) {
+        premiumNavbar.classList.add('shadow-md');
+        premiumNavbar.classList.remove('shadow-sm');
+      }
+    } else if (currentScrollY < lastScrollY || currentScrollY <= 50) {
+      // Scrolling UP or at top
+      if(topRow) { 
+        topRow.style.height = 'auto'; 
+        topRow.style.opacity = '1'; 
+        topRow.style.overflow = 'visible'; 
+        topRow.style.padding = '0.75rem 0'; 
+      }
+      if(nav2Top) { 
+        nav2Top.style.height = '0'; 
+        nav2Top.style.opacity = '0'; 
+        nav2Top.style.overflow = 'hidden'; 
+        nav2Top.style.padding = '0'; 
+      }
+      if(bottomRow) { 
+        bottomRow.style.height = '0'; 
+        bottomRow.style.opacity = '0'; 
+        bottomRow.style.overflow = 'hidden'; 
+      }
+      if(currentScrollY <= 50 && premiumNavbar) {
+        premiumNavbar.classList.remove('shadow-md');
+        premiumNavbar.classList.add('shadow-sm');
+      }
+    }
+    lastScrollY = currentScrollY;
+  });
+</script>
+
+<script>
+  // Mobile Nav Toggle
+  const mobToggle = document.getElementById('mob-nav-toggle');
+  const mobNav = document.getElementById('mobile-nav');
+  if(mobToggle && mobNav) {
+    mobToggle.addEventListener('click', () => {
+      mobNav.classList.toggle('hidden');
+    });
+  }
+
+  // Dual Navbar Scroll Logic
+  const topRow = document.querySelector('.top-row');
+  const bottomRow = document.querySelector('.nav-bottom-row');
+  const nav2Top = document.querySelector('.nav2-top-row');
+  const premiumNavbar = document.getElementById('premium-navbar');
+  
+  // Set initial state
+  if (bottomRow) {
+    bottomRow.style.height = '0';
+    bottomRow.style.opacity = '0';
+    bottomRow.style.overflow = 'hidden';
+  }
+  if (nav2Top) {
+    nav2Top.style.height = '0';
+    nav2Top.style.opacity = '0';
+    nav2Top.style.overflow = 'hidden';
+    nav2Top.style.padding = '0';
+  }
+
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    
+    if (currentScrollY > 50 && currentScrollY > lastScrollY) {
+      // Scrolling DOWN
+      if(topRow) { 
+        topRow.style.height = '0'; 
+        topRow.style.opacity = '0'; 
+        topRow.style.overflow = 'hidden'; 
+        topRow.style.padding = '0'; 
+      }
+      if(nav2Top) { 
+        nav2Top.style.height = 'auto'; 
+        nav2Top.style.opacity = '1'; 
+        nav2Top.style.overflow = 'visible'; 
+        nav2Top.style.padding = '0.5rem 0'; 
+      }
+      if(bottomRow) { 
+        bottomRow.style.height = '56px'; 
+        bottomRow.style.opacity = '1'; 
+        bottomRow.style.overflow = 'visible'; 
+      }
+      if(premiumNavbar) {
+        premiumNavbar.classList.add('shadow-md');
+        premiumNavbar.classList.remove('shadow-sm');
+      }
+    } else if (currentScrollY < lastScrollY || currentScrollY <= 50) {
+      // Scrolling UP or at top
+      if(topRow) { 
+        topRow.style.height = 'auto'; 
+        topRow.style.opacity = '1'; 
+        topRow.style.overflow = 'visible'; 
+        topRow.style.padding = '0.75rem 0'; 
+      }
+      if(nav2Top) { 
+        nav2Top.style.height = '0'; 
+        nav2Top.style.opacity = '0'; 
+        nav2Top.style.overflow = 'hidden'; 
+        nav2Top.style.padding = '0'; 
+      }
+      if(bottomRow) { 
+        bottomRow.style.height = '0'; 
+        bottomRow.style.opacity = '0'; 
+        bottomRow.style.overflow = 'hidden'; 
+      }
+      if(currentScrollY <= 50 && premiumNavbar) {
+        premiumNavbar.classList.remove('shadow-md');
+        premiumNavbar.classList.add('shadow-sm');
+      }
+    }
+    lastScrollY = currentScrollY;
+  });
+</script>
+
+<script>
+  // Mobile Nav Toggle
+  const mobToggle = document.getElementById('mob-nav-toggle');
+  const mobNav = document.getElementById('mobile-nav');
+  if(mobToggle && mobNav) {
+    mobToggle.addEventListener('click', () => {
+      mobNav.classList.toggle('hidden');
+    });
+  }
+
+  // Dual Navbar Scroll Logic
+  const topRow = document.querySelector('.top-row');
+  const bottomRow = document.querySelector('.nav-bottom-row');
+  const nav2Top = document.querySelector('.nav2-top-row');
+  const premiumNavbar = document.getElementById('premium-navbar');
+  
+  // Set initial state
+  if (bottomRow) {
+    bottomRow.style.height = '0';
+    bottomRow.style.opacity = '0';
+    bottomRow.style.overflow = 'hidden';
+  }
+  if (nav2Top) {
+    nav2Top.style.height = '0';
+    nav2Top.style.opacity = '0';
+    nav2Top.style.overflow = 'hidden';
+    nav2Top.style.padding = '0';
+  }
+
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    
+    if (currentScrollY > 50 && currentScrollY > lastScrollY) {
+      // Scrolling DOWN
+      if(topRow) { 
+        topRow.style.height = '0'; 
+        topRow.style.opacity = '0'; 
+        topRow.style.overflow = 'hidden'; 
+        topRow.style.padding = '0'; 
+      }
+      if(nav2Top) { 
+        nav2Top.style.height = 'auto'; 
+        nav2Top.style.opacity = '1'; 
+        nav2Top.style.overflow = 'visible'; 
+        nav2Top.style.padding = '0.5rem 0'; 
+      }
+      if(bottomRow) { 
+        bottomRow.style.height = '56px'; 
+        bottomRow.style.opacity = '1'; 
+        bottomRow.style.overflow = 'visible'; 
+      }
+      if(premiumNavbar) {
+        premiumNavbar.classList.add('shadow-md');
+        premiumNavbar.classList.remove('shadow-sm');
+      }
+    } else if (currentScrollY < lastScrollY || currentScrollY <= 50) {
+      // Scrolling UP or at top
+      if(topRow) { 
+        topRow.style.height = 'auto'; 
+        topRow.style.opacity = '1'; 
+        topRow.style.overflow = 'visible'; 
+        topRow.style.padding = '0.75rem 0'; 
+      }
+      if(nav2Top) { 
+        nav2Top.style.height = '0'; 
+        nav2Top.style.opacity = '0'; 
+        nav2Top.style.overflow = 'hidden'; 
+        nav2Top.style.padding = '0'; 
+      }
+      if(bottomRow) { 
+        bottomRow.style.height = '0'; 
+        bottomRow.style.opacity = '0'; 
+        bottomRow.style.overflow = 'hidden'; 
+      }
+      if(currentScrollY <= 50 && premiumNavbar) {
+        premiumNavbar.classList.remove('shadow-md');
+        premiumNavbar.classList.add('shadow-sm');
+      }
+    }
+    lastScrollY = currentScrollY;
+  });
+</script>
+
+<!-- Placeholder for dynamically injected header -->
+
+<!-- HERO SECTION -->
+<section class="hero-bg min-h-[55vh] flex items-center pt-32 pb-20 relative" id="hero">
+  <div class="hero-overlay emerald"></div>
+  
+  <div class="max-w-7xl mx-auto px-4 relative z-10 w-full text-center">
+    <div class="gsap-reveal inline-flex items-center gap-2 bg-emerald-900/30 border border-emerald-400/20 rounded-full px-5 py-2 mb-8 backdrop-blur-md">
+      <div class="w-2 h-2 bg-emerald-400 rounded-full animate-ping"></div>
+      <span class="text-xs font-bold tracking-widest text-emerald-200 uppercase">NON-REPAYABLE FUNDING</span>
+    </div>
+    
+    <h1 class="gsap-reveal text-5xl md:text-7xl font-black leading-tight mb-6 tracking-tighter max-w-5xl mx-auto text-white">
+      <span class="bg-gradient-to-r from-emerald-200 to-emerald-400 bg-clip-text text-transparent">Government Grants</span>
+    </h1>
+    
+    <p class="gsap-reveal text-xl text-emerald-50/90 mb-0 leading-relaxed max-w-3xl mx-auto font-light">
+      Unlock government subsidies, seed funds, and grants specifically designed for startups, MSMEs, and innovative projects.
+    </p>
+  </div>
+</section>
+
+<!-- CONTENT SECTION -->
+<section class="py-24 bg-white relative">
+  <div class="max-w-7xl mx-auto px-4">
+    
+    <div class="grid lg:grid-cols-2 gap-16 items-center mb-24">
+      <div class="gsap-reveal-left">
+        <h2 class="text-4xl font-black text-[#0f172a] mb-6">Fuel Your Business Growth</h2>
+        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+          Accessing the right kind of capital at the right time is crucial for business expansion. Whether you need working capital, machinery loans, or seed funding, our financial experts connect you with the best avenues.
+        </p>
+        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+          We provide end-to-end assistance: from preparing solid pitch decks and detailed project reports (DPR) to negotiating terms with financial institutions and investors.
+        </p>
+        <ul class="space-y-4 mt-8">
+          <li class="flex items-center gap-4 text-gray-700 font-medium"><i class="fas fa-check-circle text-emerald-600 text-xl"></i> Project Report Preparation</li>
+          <li class="flex items-center gap-4 text-gray-700 font-medium"><i class="fas fa-check-circle text-emerald-600 text-xl"></i> Liaison with Banks & Investors</li>
+          <li class="flex items-center gap-4 text-gray-700 font-medium"><i class="fas fa-check-circle text-emerald-600 text-xl"></i> Quick Turnaround Time</li>
+        </ul>
+      </div>
+      <div class="gsap-reveal-right">
+        <div class="bg-emerald-50 p-10 rounded-[2rem] border border-emerald-100 shadow-xl relative overflow-hidden text-center flex flex-col items-center justify-center h-full min-h-[400px]">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-emerald-200 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/4"></div>
+          <div class="w-24 h-24 bg-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600 text-5xl mb-8 relative z-10 shadow-inner">
+            <i class="fas fa-hand-holding-usd"></i>
+          </div>
+          <h3 class="text-3xl font-bold text-[#064e3b] mb-4 relative z-10">Smart Capital</h3>
+          <p class="text-gray-600 relative z-10 text-lg">We help you choose the funding structure that minimizes dilution and maximizes growth.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-12 gsap-reveal">
+      <h3 class="text-3xl font-black text-[#0f172a] mb-6">Ready to Scale Your Business?</h3>
+      <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Get in touch with our financial advisors today to evaluate your eligibility and funding options.</p>
+      <a href="contact.html" class="inline-block px-10 py-5 bg-[#064e3b] text-white font-black text-xl rounded-2xl hover:bg-green-900 transition-all transform hover:scale-105 shadow-2xl shadow-green-900/30">
+        Assess Eligibility
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Placeholder for dynamically injected footer -->
+
+<script>
+  // Initialize Lenis Smooth Scrolling
+  
+  }
+  requestAnimationFrame(raf);
+
+  // GSAP Animations
+  gsap.registerPlugin(ScrollTrigger);
+
+  // General Reveal
+  gsap.utils.toArray('.gsap-reveal').forEach(el => {
+    gsap.fromTo(el, 
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, ease: "power3.out", scrollTrigger: { trigger: el, start: "top 85%" } }
+    );
+  });
+  
+  gsap.fromTo('.gsap-reveal-left', 
+    { x: -50, opacity: 0 },
+    { x: 0, opacity: 1, duration: 1, ease: "power3.out", scrollTrigger: { trigger: '.gsap-reveal-left', start: "top 85%" } }
+  );
+
+  gsap.fromTo('.gsap-reveal-right', 
+    { x: 50, opacity: 0 },
+    { x: 0, opacity: 1, duration: 1, ease: "power3.out", scrollTrigger: { trigger: '.gsap-reveal-right', start: "top 85%" } }
+  );
+</script>
+
+<!-- =========================================================
+     GLOBAL FOOTER
+     ========================================================= -->
+<!-- =========================================================
+     GLOBAL FOOTER
+     ========================================================= -->
+<!-- =========================================================
+     GLOBAL FOOTER
+     ========================================================= -->
+<!-- =========================================================
+     GLOBAL FOOTER
+     ========================================================= -->
